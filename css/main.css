@@ -2896,7 +2896,8 @@ footer h4.h05::after {
 /* footer bottom
  * --------------------------------- */
 .footer-bottom {
-  margin-top: 3rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
   font-family: "montserrat-regular", sans-serif;
   font-size: 1.4rem;
