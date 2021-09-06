@@ -173,7 +173,7 @@ p.icons i:hover {
   grid-area: authorImage;
   border: 2px solid black;
   border-radius: 50%;
-  background: url('../images/logo.jpg');
+  background: url('../images/logo.webp');
   background-size: cover;
 }
 
