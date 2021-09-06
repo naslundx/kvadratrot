@@ -1,61 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Lora|Playfair+Display:700i,900'); */
-
-
-/*
- * Libre Baskerville 
-================================================================================ */
-
-@font-face {
-    font-family: "librebaskerville-regular";
-    src: url("../fonts/librebaskerville/librebaskerville-regular-webfont.woff2") format("woff2"), url("../fonts/librebaskerville/librebaskerville-regular-webfont.woff") format("woff");
-    font-style: normal;
-    font-weight: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "librebaskerville-italic";
-    src: url("../fonts/librebaskerville/librebaskerville-italic-webfont.woff2") format("woff2"), url("../fonts/librebaskerville/librebaskerville-italic-webfont.woff") format("woff");
-    font-style: normal;
-    font-weight: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "librebaskerville-bold";
-    src: url("../fonts/librebaskerville/librebaskerville-bold-webfont.woff2") format("woff2"), url("../fonts/librebaskerville/librebaskerville-bold-webfont.woff") format("woff");
-    font-style: normal;
-    font-weight: normal;
-    font-display: swap;
-}
-
-
-/*
-   * Montserrat
-  ================================================================================ */
-
-@font-face {
-    font-family: "montserrat-regular";
-    src: url("../fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-regular-webfont.woff") format("woff");
-    font-style: normal;
-    font-weight: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "montserrat-bold";
-    src: url("../fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-bold-webfont.woff") format("woff");
-    font-style: normal;
-    font-weight: normal;
-    font-display: swap;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Lora|Playfair+Display:700i,900');
 html,
 body {
     margin: 0;
     width: 100%;
     height: 100%;
-    font-family: "librebaskerville-regular", serif;
 }
 
 h1,
@@ -70,16 +18,14 @@ a,
 }
 
 h1 {
-    font-family: "montserrat-bold", sans-serif;
-    /* font-family: "Playfair Display", serif; */
+    font-family: "Playfair Display", serif;
     font-size: 48px;
     text-align: left;
     margin-bottom: 8px;
 }
 
 h2 {
-    font-family: "montserrat-bold", sans-serif;
-    /* font-family: "Lato", sans-serif; */
+    font-family: "Lato", sans-serif;
     font-size: 26px;
     font-weight: 700;
     padding: 0;
@@ -93,7 +39,7 @@ p,
 i,
 a {
     margin-top: 21px;
-    /* font-family: "Lora"; */
+    font-family: "Lora";
     font-size: 21px;
     letter-spacing: -0.03px;
     line-height: 1.58;
@@ -104,14 +50,14 @@ a {
 }
 
 blockquote {
-    /* font-family: "Playfair Display", serif; */
+    font-family: "Playfair Display", serif;
     font-size: 30px;
     font-style: italic;
     letter-spacing: -0.36px;
     line-height: 44.4px;
     overflow-wrap: break-word;
     margin: 55px 0 33px 0;
-    /* text-align: center; */
+    text-align: center;
     color: rgba(0, 0, 0, 0.68);
     padding: 0 0 0 50px;
 }
@@ -129,7 +75,7 @@ code {
 
 .first-letter {
     overflow-wrap: break-word;
-    /* font-family: "Playfair Display", serif; */
+    font-family: "Playfair Display", serif;
     font-size: 60px;
     line-height: 60px;
     display: block;
@@ -139,7 +85,7 @@ code {
 }
 
 .subtitle {
-    /* font-family: "Lato", sans-serif; */
+    font-family: "Lato", sans-serif;
     color: rgba(0, 0, 0, 0.54);
     margin: 0 0 24px 0;
 }
@@ -237,7 +183,7 @@ p.icons i:hover {
 .authorName,
 .authorSub {
     font-family: "montserrat-bold", sans-serif;
-    /* font-family: "Lato", sans-serif; */
+    font-family: "Lato", sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin-top: 6px;
@@ -287,7 +233,7 @@ p.icons i:hover {
     -ms-grid-row: 0;
     -ms-grid-column: 3;
     grid-area: header;
-    margin: 0 0;
+    margin: 0 0 20px 0;
 }
 
 .footer {
@@ -303,10 +249,10 @@ p.icons i:hover {
 }
 
 .header * {
-    font-family: "montserrat-regular", sans-serif;
     text-align: center;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
+    margin: 5px 0;
 }
 
 .footer * {
@@ -342,6 +288,9 @@ p.icons i:hover {
         -ms-grid-columns: auto;
         grid-template-columns: auto;
         grid-template-areas: "header" "img" "article" "footer";
+    }
+    .header {
+        margin-bottom: 0;
     }
     .meta {
         -ms-grid-rows: 1fr 1fr;
