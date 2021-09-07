@@ -70,14 +70,47 @@
             <p>Hittar du mönstret? Serien börjar med två ettor, och summerar du ihop dem blir det 2, vilket är nästa tal. De senaste två talen är då 1 och 2, summan av dessa är 3, vilket är nästa tal. Därefter följer 5 och så vidare. Denna serie är mycket
                 berömd och kallas Fibonacciserien efter matematikern Fibonacci som på 1200-talet förde in vårt nuvarande talsystem med tio siffror till Europa från öst.</p>
 
+            <p>Talserien har visat sig vara mycket intressant att studera då den ofta förekommer i naturen, bland spiraler i allt från snäckor till galaxer. En gran- eller tallkottes fjäll bildar nedifrån och upp spiraler såväl medsols som motsols. Är kotten hel är antalet spiraler lika med Fibonaccitalen 5, 8 eller 13. Ungefär samma sak kan observeras i en solros där antalet spiraler kan vara lika med 34, 55, 89 eller 144 vilka alla är Fibonaccital.</p>
+
+            <p>Något annat intressant sker om ett tal i serien delas med det föregående, som 55/34 eller 89/55. Ju större tal som används desto närmre kommer kvoten det gyllene snittet, oftast kallat fi, med det ungefärliga värdet 1,61803. Detta är ett tal som, precis som Fibonaccitalen, ofta förekommer i naturen och bland arkitektur. Det figurerar i många antika byggnadsverk, exempelvis förhållandet mellan olika delar av det antika grektiska templet Parthenon.</p>
+
+            <p>Cheopspyramiden hade vid sitt upprättande följande mått:</p>
+
             <div class="article-img">
                 <img src="images/articles/13.jpg" alt="Image">
             </div>
 
-            <p>...</p>
+            <p>Hos gamla pyramider i Egypten gäller att dubbla sidlängden dividerat med höjden ger ett värde mycket nära pi. Vissa diskuterar huruvida detta tyder på att egyptierna använde stora insikter om cirkelns konstruktion för att bygga pyramiderna. Kanske finns något särskilt vackert med gyllene snittet och pi som vi omedvetet eftersträvar.</p>
+
+            <p>Ingenjörer och arkitekter idag behöver mycket matematik för att utföra sina jobb. Det är viktigt att kunna räkna ordentligt från början, det blir tråkigt att bygga upp ett hus, en fabrik eller en skyskrapa och sedan märka att något borde ha gjorts annorlunda. Vad som ligger bakom sådan planering ska vi se på härnäst.</p>
 
             <h2>Skala och planering</h2>
-            <p>...</p>
+            <p>Det vore mycket arbetssamt att designa ett hus i naturlig storlek då det fordrar mycket stora papper. Processen vore synnerligen opraktisk. Ritningar målas istället upp i någon skala där en meter kan representeras av en centimeter eller millimeter. Mycket små objekt som skruvar eller kugghjul kan visas i en förstorande skala.</p>
+
+            <p>Idén kan tyckas elementär men ligger till grund för mycket mer avancerade saker. Allt som ritas upp på en dator- eller TV-skärm kan sägas vara i någon skala i jämförelse med verkligheten. Bildbehandlingsprogram som Photoshop måste ständigt göra intensiva beräkningar när en bild ska visas och i synnerhet när den redigeras.</p>
+
+            <p>Bildskärmar och digitala fotografier är uppbyggda av många små enfärgade rutor kallade pixlar, som tillsammans formar en bild liksom rutorna på en kakelvägg. Låt säga att en bild med storleken 3264 x 2448 pixlar ska visas i sin helhet på en datorskärm med upplösningen 1920 x 1080 pixlar. Hela bilden får alltså inte plats och måste skalas ner. Frågan är hur mycket?</p>
+
+            <p>För en exakt passform ska bilden krympas med en faktor om:</p>
+
+            <p>Ett värde vi kan kalla för “krympningsfaktorn”. Bildens bredd anpassas till</p>
+
+            <p>det vill säga mycket nära skärmens bredd om 1920 pixlar. Att det inte blir exakt beror på att vi för läslighetens skull avrundade krympningsfaktorn. Höjden på bilden blir
+            </p>
+
+            <p>Beskåda! Detta är större än de 1024 pixlar som utgör datorskärmens höjd. Vad ska då ske? Om man tvunget vill att hela bilden ska synas på skärmen samtidigt även i höjdled, som vid en presentation, får en ny krympningsfaktor beräknas som är mindre än den tidigare. De principer vi gått igenom är sanna och gäller i många andra avseenden, egentligen överallt där någon form av zoom är inblandad. Digitalkameror är ett vanligt exempel.</p>
+
+            <p>Riktigt såhär enkelt är det egentligen inte heller. En bildskärm består av en begränsad mängd pixlar. Om en mycket högupplöst bild krymps ned på en liten yta kan inte alla pixlar som ingår i bilden visas (det finns helt enkelt inte så många på den lilla ytan). I så fall måste vissa delar av bilden ignoreras, till exempel varannan pixel, så att bilden kan ritas upp där. Just hur detta ska göras för att inte bilden ska se helknasig ut finns det olika metoder för och vissa varianter passar bättre än andra i olika avseenden. Senare i boken kommer vi se hur medelvärden kan användas för att få en blandning av färger hos en större grupp pixlar. Det gemensamma värdet kan användas för att representera hela gruppens färger.</p>
+
+            <p>Ett mer sofistikerat exempel är ”Seam Carving”, en metod utvecklad för att kunna krympa digitala fotografier utan att förlora detaljer. Om en bild är tagen med två hus och ett stort öppet fält emellan är kanske det mest intressanta de två husen och inte det tomma öppna fältet. När bilden ska krympas ned bör således inte alla delar krympas likvärdigt, delar av fältet bör strykas först. Denna metod blir mycket passande.</p>
+
+            <div class="article-img">
+                <img src="images/articles/14.jpg" alt="Image">
+            </div>
+
+            <p>Hur fungerar den då? Djikstras algoritm, en matematisk metod för att hitta den kortaste eller billigaste vägen mellan två punkter på en karta, används här för att hitta den “billigaste” sträckan i höjd- eller sidled. Med billigaste menas den sträcka som har minst ändringar i färg och kontrast. På husen finns många blandade färger och därmed många detaljer och denna sträcka blir ”dyr”, medan en grön äng med blå himmel har små förändringar. En sträcka där blir billigare. De "billigare" sträckorna innehåller här alltså färre detaljer och är därmed de som först och främst ska tas bort vid en förminskning.</p>
+
+            <p>Att hitta den billigaste sträckan är inget enkelt problem när det finns så många pixlar i bilden och därmed ofantligt många möjliga vägar från en sida till en annan.</p>
 
             <h2>Konstruktionsrelaterade problem</h2>
             <p>...</p>
