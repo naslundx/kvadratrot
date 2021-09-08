@@ -21,18 +21,18 @@
     <meta name="description" content="I Verklighetens Kvadratrötter får du en inblick i hur beroende vår vardag är av matematiken för att existera. Boken behandlar den viktiga frågan om varför matematik är så viktigt, såväl för samhället som för vardagsmänniskan.">
     <meta name="author" content="Marcus Näslund">
 
-    <!-- TODO fixa metataggar -->
-
     <meta property="og:type" content="book">
     <meta property="og:title" content="Verklighetens Kvadratrötter">
-    <meta property="og:description" content="Verklighetens Kvadratrötter ger dig en tydlig inblick i hur beroende vår teknik och våra vardagsliv är av skolmatematiken.">
+    <meta property="og:description" content="Läs helt gratis: Arkitektur, konstruktion och snickeri">
     <meta property="og:image" content="https://naslundx.github.io/kvadratrot/images/logo.jpg">
-    <meta property="og:url" content="https://naslundx.github.io/kvadratrot/">
+    <meta property="og:url" content="https://naslundx.github.io/kvadratrot/arkitektur.html">
+    <meta property="book:isbn" content="9789174630343">
+    <meta property="book:author" content="Marcus Näslund">
 
     <meta property="twitter:title" content="Verklighetens Kvadratrötter">
-    <meta property="twitter:description" content="Verklighetens Kvadratrötter ger dig en tydlig inblick i hur beroende vår teknik och våra vardagsliv är av skolmatematiken.">
+    <meta property="twitter:description" content="Läs helt gratis: Arkitektur, konstruktion och snickeri">
     <meta property="twitter:image" content="https://naslundx.github.io/images/logo.jpg">
-    <meta property="twitter:url" content="https://naslundx.github.io/kvadratrot/">
+    <meta property="twitter:url" content="https://naslundx.github.io/kvadratrot/arkitektur.html">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -43,6 +43,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+    <link rel="stylesheet" href="css/jqmath-0.4.3.min.css">
+    <script src="js/jqmath-vanilla.min.js"></script>
 </head>
 
 <body>
@@ -63,7 +67,7 @@
                     <div class="authorInfo">
                         <div class="authorName"><a href="https://naslundx.github.io/kvadratrot">Ett kapitel från
                                 Verklighetens Kvadratrötter</a></div>
-                        <div class="authorSub">Senast uppdaterad 2021-09-06 19:39</div>
+                        <div class="authorSub">Senast uppdaterad 2021-09-30 19:39</div>
                     </div>
                 </div>
                 <p class="icons">
@@ -74,9 +78,18 @@
             </div>
         </div>
         <main class="article">
-            <hr class="fancy-line">
+            <!-- <hr class="fancy-line"> -->
+            <div class="welcome">
+                <p>
+                    Hej! Detta är ett reviderat kapitel från <strong>Verklighetens Kvadratrötter</strong>, en bok från 2012 om skolmattens nytta i vardagen och samhället. Under kommande månader publicerar jag dessa online <strong>helt gratis</strong>. 
+                </p>
+                <p>
+
+                    Är du nyfiken på mer kan du <a href="https://www.bokus.com/bok/9789174630343/verklighetens-kvadratrotter-vad-den-dar-matematiken-faktiskt-anvands-till/">köpa hela boken</a> eller spana in min nya bok <a href="https://ensummaavogonblick.se">En Summa av Ögonblick</a>. Vill du prata mer med mig kan du <a href="https://linkedin.com/in/naslundx">nå mig på LinkedIn</a>. Varsågod! 
+                </p>
+            </div>
             <p>
-                <span class="first-letter">V</span>etenskap och då även matematik var något som historiskt sågs som mycket mer mystiskt. Bland de som tog det till sin spets var de gamla Pythagoréerna i antikens Grekland; de såg matematiken som något nästintill
+                <span class="first-letter">V</span>etenskap och då även matematik var något som historiskt sågs som mycket mer mystiskt. Bland de som tog det till sin spets var de gamla <strong>Pythagoréerna</strong> i antikens Grekland; de såg matematiken som något nästintill
                 religiöst, en kraft som låg bakom hela universum.
             </p>
             <p>
@@ -111,7 +124,7 @@
 
             <p>Talserien har visat sig vara mycket intressant att studera då den ofta förekommer i naturen, bland spiraler i allt från snäckor till galaxer. En gran- eller tallkottes fjäll bildar nedifrån och upp spiraler såväl medsols som motsols. Är kotten hel är antalet spiraler lika med Fibonaccitalen 5, 8 eller 13. Ungefär samma sak kan observeras i en solros där antalet spiraler kan vara lika med 34, 55, 89 eller 144 vilka alla är Fibonaccital.</p>
 
-            <p>Något annat intressant sker om ett tal i serien delas med det föregående, som 55/34 eller 89/55. Ju större tal som används desto närmre kommer kvoten det gyllene snittet, oftast kallat fi, med det ungefärliga värdet 1,61803. Detta är ett tal som, precis som Fibonaccitalen, ofta förekommer i naturen och bland arkitektur. Det figurerar i många antika byggnadsverk, exempelvis förhållandet mellan olika delar av det antika grektiska templet Parthenon.</p>
+            <p>Något annat intressant sker om ett tal i serien delas med det föregående, som 55/34 eller 89/55. Ju större tal som används desto närmre kommer kvoten <span class="highlighted">det gyllene snittet</span>, oftast kallat φ, med det ungefärliga värdet 1,61803. Detta är ett tal som, precis som Fibonaccitalen, ofta förekommer i naturen och bland arkitektur. Det figurerar i många antika byggnadsverk, exempelvis förhållandet mellan olika delar av det antika grektiska templet Parthenon.</p>
 
             <p>Cheopspyramiden hade vid sitt upprättande följande mått:</p>
 
@@ -131,6 +144,8 @@
             <p>Bildskärmar och digitala fotografier är uppbyggda av många små enfärgade rutor kallade pixlar, som tillsammans formar en bild liksom rutorna på en kakelvägg. Låt säga att en bild med storleken 3264 x 2448 pixlar ska visas i sin helhet på en datorskärm med upplösningen 1920 x 1080 pixlar. Hela bilden får alltså inte plats och måste skalas ner. Frågan är hur mycket?</p>
 
             <p>För en exakt passform ska bilden krympas med en faktor om:</p>
+
+            <p>$$y-y_0=m(x-x_0)$$</p>
 
             <p>Ett värde vi kan kalla för “krympningsfaktorn”. Bildens bredd anpassas till</p>
 
@@ -152,17 +167,70 @@
             <p>Att hitta den billigaste sträckan är inget enkelt problem när det finns så många pixlar i bilden och därmed ofantligt många möjliga vägar från en sida till en annan.</p>
 
             <h2>Konstruktionsrelaterade problem</h2>
-            <p>...</p>
+            <p>När en figur får vissa begränsningar såsom form (ett rektangulärt hus) eller omkrets (begränsad mängd virke till ett staket) kan den anpassas efter angivna krav på olika sätt.
+            </p>
+
+            <p>Ska ett staket omsluta en hage kan det vara önskvärt att ytan blir så stor som möjligt. Kanske är den största tillgängliga mängden virke sådan att vi högst får ihop hundra meters omkrets. Kanske måste vi dessutom anpassa oss efter någon specifik form på grund av lagar, markens utseende eller något annat. Låt oss anta att en rektangulär hage är efterfrågad med maximal längd 100 meter. Hur stor yta kan den möjligtvis omsluta?</p>
+
+            <p>Låt bredd förkortas  och längd förkortas :</p>
+
+            matte
+
+            <p>Vi försöker hitta värdet för längden som ger den största möjliga arean. Det visar sig (med hjälp av det matematiska verktyget derivata) att denna längd är 25 meter. Där har vi det! När vi vet längden på denna sida och den totala omkretsen kan bredden också räknas ut och det visar sig att denna också blir 25 meter vilket gör hagen kvadratisk.</p>
+
+            <p>I vissa fall kan det finnas andra begränsningar eller önskemål om andra former, kanske en uteplats som ska vara fem- eller sexhörnig med en begränsad takhöjd. För att slippa behöva söka bygglov måste byggnaden uppfylla vissa storlekskrav.</p>
+
+            <p>Metoderna förblir desamma även om förhållandet ibland är det omvända: att ytan kostar mycket pengar och en inhägnad eller byggnad ska anpassas efter en minsta möjliga areakostnad. Av dessa anledningar blir skyskrapor mycket vanliga i större städer.</p>
+
+            <p>I vilket fall som helst är det matematiska kunskaper och erfarenheter av dessa som är bra hjälpmedel vid bra beslutsfattande. Beslutsteori, ett stort tvärvetenskapligt område inom filosofin och matematiken är också ofta tillämpat. Detta område försöker ge uttryck för hur optimala beslut fattas.
+            </p>
+
+            <p>Den figur som har minst yta i förhållande till den volym den omsluter är klotet och av denna anledning har många små organismer och celler denna form. Den blir effektivast eftersom minsta mängd material används för att konstruera cellväggarna som omsluter och skyddar den. Även naturen räknar matte. Ett annat synsätt är att cellväggarna konstrueras på så vis på grund av universums egenskaper. Matematiken får då istället rollen som en förklarare, en medlare av information. Det redskap som låter oss förstå såväl hur som varför.</p>
+
+            <p>Konstruktion av broar fordrar många beräkningar för att försäkra alla inblandade om att utseendet och valet av material garanterar att bron håller för en viss vikt (motsvarande ett visst troligt antal lastbilar eller människor). Olika förutsägelser om vid vilka tider maximal trafiknivå uppnås och hur hög denna nivå är uträttas också matematiskt, på sätt som diskuteras i kapitlet Statistik. Tunnelborrning har samma matteberonde: arbetet börjar oftast från två olika håll och endast med geometrin kan de inblandade försäkra sig om att de två delarna faktiskt kommer mötas i mitten.</p>
 
             <h2>Industrirobotar</h2>
-            <p>...</p>
+            <p>En industrirobot som förflyttar och monterar delar kan bestå av en komplicerad robotarm med leder i olika riktningar, positionerad på en roterande platta. Att få robotarmens “hand” att röra sig i en rät linje är då ingen enkel uppgift, eftersom en led kanske inte har så mycket svängrum. Försök hålla en hand framför dig och röra den rakt framåt, inte i sidled eller i höjdled. Du märker att du inte kommer lyckas genom att bara röra handleden, du måste kombinera förflyttningar av hela armen: handleden, armbågen och axeln, för att få handen att röra sig rakt.</p>
+
+            <p>Detta är något som gärna eftersträvas även i robotsammanhang: kontrollerade rörelser längs olika fasta banor genom kombinationer av rörelser i olika vinklar. En matematiker tar då fram formler för att beskriva hur dessa rörelser kan utföras, som sedan används för att programmera roboten. En intressant fråga kan också vara hur långt robotarmens hand kan förflyttas i olika riktningar. Står du still och för din hand rakt framåt kan du omöjligen nå tre meter bort, hur du än vinklar din armbåge och axel. Dessa typer av problem, när maximala eller minimala gränser hos ett värde ska hittas, brukar i matematiken kallas extremvärdesproblem.
+            </p>
+
+            <p>För att lösa dessa extremvärdesproblem används formler och kunskap inom geometri och trigonometri som matematiker utvecklat under årtusenden. Att se hur, eller ens om, roboten kan föra sin hand från en plats till en annan är en något enklare uppgift. Låt oss titta på den. Ett sätt att uttrycka en rörelse som innefattar ett avstånd och en vinkel på ett matematiskt vis är med vektorer som här illustreras av pilar.</p>
+
+            <p>Genom att förflytta oss olika långt längs lederna produceras olika långa pilar. Vid rotation bevaras pilens längd men pekar istället i en annan riktning. Summan av alla dessa rörelser får vi om vi summerar alla vektorer - alltså “klistrar ihop” pilarna efter varandra medan vi fortfarande bevarar riktningen. Då ser vi:</p>
+
+            <p>Det vill säga ett sätt att röra robotens hand från den ena punkten till den andra, exempelvis från en hög med fordonsdelar till den bil som är under konstruktion. När dessa vektorer uttrycks matematiskt ger de bra verktyg för att lösa problemet med hur dessa kombineras för att nå en specifik plats eller följa en specifik väg. Detta matematiska område kallas främst linjär algebra. Datorer kan inte tänka i pilar, robotar behöver den matematiska notationen.
+            </p>
+
+            <p>Inom ämnet reglerteknik försöker man ta fram matematiska uttryck som automatiskt kan reglera något elektroniskt system. Det kan gälla hur mycket farthållaren i en bil ska gasa för att uppnå vald hastighet. Mer acceleration önskas om nuvarande hastighet är 50 km/h och önskad hastighet är 90 km/h, men en mycket liten förändring fordras om nuvarande hastighet är 89 km/h. En ekvation måste även kunna reagera olika beroende på hur mycket vägen lutar vilket inte underlättar problemet.</p>
+
+            <p>Själva förflyttningen av robotarmen är inte enkelt utförd. Ofta är det någon elektrisk spänning som ställs in som får armen att röra sig till önskat läge. Är spänningen för svag blir rörelsen långsam, men är spänningen för stark svänger armen för fort och förbi önskad position. Armen måste då stanna och vridas tillbaka vilket fördröjer arbetet. Vilken kurva ska spänningen följa för att förflyttningen går så snabbt som möjligt? Efter att ha läst boken hittills är det nog inte förvånande att även denna fråga besvaras med matematiska medel.</p>
 
             <h2>Övrigt</h2>
-            <p>yada yada yada</p>
+            <p>Det finns mycket annat att ha i åtanke när byggnader eller fordon konstrueras.</p>
+
+            <ul>
+                <li>
+                    <p><strong>Luftflödet och ventilationen:</strong> Är det hälsosamt att befinna sig i lokalen? Speciellt viktigt är det i fabriker. Relaterat till detta är Navier-Stokes ekvationer som beskrivs i kapitlet om olösta problem.</p>
+                </li>
+                <li>
+                   <p><strong>Ljudnivåer:</strong> Hur många befinner sig i en lokal och hur hög ljudnivå kan en person eller maskin där tänkas uppbringa? Hur hög ljudnivå blir det då gemensamt, blir det skadligt högt på någon plats?</p>
+                </li>
+                <li>
+                    <p><strong>Ljusstyrka:</strong> Hur ljust blir det genom fönstren och längs vilka vinklar skiner solen? Hur kommer ljuset att sprida sig genom rummen, blir några områden för mörka?</p>
+                </li>
+                <li>
+                    <p><strong>Hållbarhet:</strong> Hur är vikter och material fördelade? Är slutprodukten hållfast och säker? Hur skulle byggnaden klara sig i starka vindar eller jordbävningar? Klarar en vattendamm av påfrestningen från den sjö eller flod den dämmer upp?</p>
+                </li>
+            </ul>
+            <p>Arkitekter och byggnadsingenjörer har mycket utbildning inom mer än matematik för att finna svar på dessa frågor, men sakerna studeras och modelleras med matematisk metodologi. Det är oftast det mest effektiva sättet att uttrycka saker på ett koncist vis för att underlätta förutsägelser och testa nya metoder.</p>
+            
+            <p>På så vis kan generella metoder och konstruktionsregler motiveras och läras ut utan högre mattekunskaper. För att förstå dem mer i detalj och kunna utveckla dem är dock mattekunskaperna ett måste.</p>
 
         </main>
         <div class="footer">
             <p>Om du gillade detta, spana in min nya bok: <a href="https://ensummaavogonblick.se">En Summa av Ögonblick</a>!</p>
+            <p>Följ boken på <a href="https://www.facebook.com/summaogonblick">Facebook</a> för att veta när nästa kapitel släpps!</p>
         </div>
     </div>
 

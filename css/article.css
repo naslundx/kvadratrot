@@ -92,6 +92,7 @@ code {
 
 p.icons {
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 0;
 }
 
@@ -102,6 +103,15 @@ p.icons a {
 
 p.icons i:hover {
     color: rgba(100, 100, 100, 0.54);
+}
+
+.welcome {
+    border: 2px solid #555555;
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center
 }
 
 
@@ -252,12 +262,18 @@ p.icons i:hover {
     text-align: center;
     color: white;
     font-size: 12px;
-    margin: 5px 0;
+    margin: 5px 1px;
 }
 
 .footer * {
     text-align: center;
     color: white;
+    font-size: 14px;
+    margin: 5px 1px;
+}
+
+.welcome a:hover, .header a:hover, .footer a:hover {
+    color: rgb(249, 168, 40, 0.7);
 }
 
 @media screen and (max-width: 1073px) {
@@ -302,10 +318,6 @@ p.icons i:hover {
     .info {
         padding-top: 0;
         padding-bottom: 0;
-    }
-    .icons {
-        margin-top: 0;
-        margin-bottom: 0;
     }
     .meta {
         -ms-grid-row: 1;
