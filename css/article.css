@@ -237,6 +237,7 @@ p.icons i:hover {
 .article-img img {
     max-width: 100%;
     height: auto;
+    mix-blend-mode: multiply;
 }
 
 .header {
@@ -272,7 +273,7 @@ p.icons i:hover {
     margin: 5px 1px;
 }
 
-.welcome a:hover, .header a:hover, .footer a:hover {
+.welcome a:hover, .header a:hover, .footer a:hover, .article a:hover {
     color: rgb(249, 168, 40, 0.7);
 }
 
@@ -307,6 +308,9 @@ p.icons i:hover {
     }
     .header {
         margin-bottom: 0;
+    }
+    .article-img {
+        max-width: 90%;
     }
     .meta {
         -ms-grid-rows: 1fr 1fr;

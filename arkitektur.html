@@ -124,7 +124,7 @@
 
             <p>Talserien har visat sig vara mycket intressant att studera då den ofta förekommer i naturen, bland spiraler i allt från snäckor till galaxer. En gran- eller tallkottes fjäll bildar nedifrån och upp spiraler såväl medsols som motsols. Är kotten hel är antalet spiraler lika med Fibonaccitalen 5, 8 eller 13. Ungefär samma sak kan observeras i en solros där antalet spiraler kan vara lika med 34, 55, 89 eller 144 vilka alla är Fibonaccital.</p>
 
-            <p>Något annat intressant sker om ett tal i serien delas med det föregående, som 55/34 eller 89/55. Ju större tal som används desto närmre kommer kvoten <span class="highlighted">det gyllene snittet</span>, oftast kallat φ, med det ungefärliga värdet 1,61803. Detta är ett tal som, precis som Fibonaccitalen, ofta förekommer i naturen och bland arkitektur. Det figurerar i många antika byggnadsverk, exempelvis förhållandet mellan olika delar av det antika grektiska templet Parthenon.</p>
+            <p>Något annat intressant sker om ett tal i serien delas med det föregående, som $55/34$ eller $89/55$. Ju större tal som används desto närmre kommer kvoten <span class="highlighted">det gyllene snittet</span>, oftast kallat φ, med det ungefärliga värdet 1,61803. Detta är ett tal som, precis som Fibonaccitalen, ofta förekommer i naturen och bland arkitektur. Det figurerar i många antika byggnadsverk, exempelvis förhållandet mellan olika delar av det antika grektiska templet Parthenon.</p>
 
             <p>Cheopspyramiden hade vid sitt upprättande följande mått:</p>
 
@@ -145,14 +145,18 @@
 
             <p>För en exakt passform ska bilden krympas med en faktor om:</p>
 
-            <p>$$y-y_0=m(x-x_0)$$</p>
+            <p>$${\text"Tillgänglig bredd"}/{\text"Bildens bredd"} = {1920}/{3264} ≈ 0,5882$$</p>
 
             <p>Ett värde vi kan kalla för “krympningsfaktorn”. Bildens bredd anpassas till</p>
+
+            <p>$$\text"Bredd" ⋅ \text"Krympningsfaktor" = 3264 ⋅ 0,5882 = 1919,88$$</p>
 
             <p>det vill säga mycket nära skärmens bredd om 1920 pixlar. Att det inte blir exakt beror på att vi för läslighetens skull avrundade krympningsfaktorn. Höjden på bilden blir
             </p>
 
-            <p>Beskåda! Detta är större än de 1024 pixlar som utgör datorskärmens höjd. Vad ska då ske? Om man tvunget vill att hela bilden ska synas på skärmen samtidigt även i höjdled, som vid en presentation, får en ny krympningsfaktor beräknas som är mindre än den tidigare. De principer vi gått igenom är sanna och gäller i många andra avseenden, egentligen överallt där någon form av zoom är inblandad. Digitalkameror är ett vanligt exempel.</p>
+            <p>$$\text"Höjd" ⋅ \text"Krympningsfaktor" = 2448 ⋅ 0,5882 = 1439,9$$</p>
+
+            <p>Beskåda! Detta är större än de 1080 pixlar som utgör datorskärmens höjd. Vad ska då ske? Om man tvunget vill att hela bilden ska synas på skärmen samtidigt även i höjdled, som vid en presentation, får en ny krympningsfaktor beräknas som är mindre än den tidigare. De principer vi gått igenom är sanna och gäller i många andra avseenden, egentligen överallt där någon form av zoom är inblandad. Digitalkameror är ett vanligt exempel.</p>
 
             <p>Riktigt såhär enkelt är det egentligen inte heller. En bildskärm består av en begränsad mängd pixlar. Om en mycket högupplöst bild krymps ned på en liten yta kan inte alla pixlar som ingår i bilden visas (det finns helt enkelt inte så många på den lilla ytan). I så fall måste vissa delar av bilden ignoreras, till exempel varannan pixel, så att bilden kan ritas upp där. Just hur detta ska göras för att inte bilden ska se helknasig ut finns det olika metoder för och vissa varianter passar bättre än andra i olika avseenden. Senare i boken kommer vi se hur medelvärden kan användas för att få en blandning av färger hos en större grupp pixlar. Det gemensamma värdet kan användas för att representera hela gruppens färger.</p>
 
@@ -172,11 +176,20 @@
 
             <p>Ska ett staket omsluta en hage kan det vara önskvärt att ytan blir så stor som möjligt. Kanske är den största tillgängliga mängden virke sådan att vi högst får ihop hundra meters omkrets. Kanske måste vi dessutom anpassa oss efter någon specifik form på grund av lagar, markens utseende eller något annat. Låt oss anta att en rektangulär hage är efterfrågad med maximal längd 100 meter. Hur stor yta kan den möjligtvis omsluta?</p>
 
-            <p>Låt bredd förkortas  och längd förkortas :</p>
+            <p>Låt bredd förkortas $B$ och längd förkortas $L$:</p>
 
-            matte
+            <p>$$\text"(Arean) "\, A = B ⋅ L$$</p>
+            <p>$$\text"(Omkretsen) "\, ∅ = 2 ⋅ B + 2 ⋅ L = 100$$</p>
 
-            <p>Vi försöker hitta värdet för längden som ger den största möjliga arean. Det visar sig (med hjälp av det matematiska verktyget derivata) att denna längd är 25 meter. Där har vi det! När vi vet längden på denna sida och den totala omkretsen kan bredden också räknas ut och det visar sig att denna också blir 25 meter vilket gör hagen kvadratisk.</p>
+            <p>Uttrycket för omkretsen kan skrivas om till</p>
+
+            <p>$$B = {100 - 2L}/2$$</p>
+
+            <p>och sättas in i uttrycket för arean vilket ger</p>
+
+            <p>$$A = {100 - 2L}/2 ⋅ L = 50L - L^2$$</p>
+
+            <p>Vi försöker hitta värdet för längden som ger den största möjliga arean. Det visar sig (med hjälp av det matematiska verktyget <a href="https://www.matteboken.se/lektioner/matte-1/geometri/vektorer">derivata</a>) att denna längd är 25 meter. Där har vi det! När vi vet längden på denna sida och den totala omkretsen kan bredden också räknas ut och det visar sig att denna också blir 25 meter vilket gör hagen kvadratisk.</p>
 
             <p>I vissa fall kan det finnas andra begränsningar eller önskemål om andra former, kanske en uteplats som ska vara fem- eller sexhörnig med en begränsad takhöjd. För att slippa behöva söka bygglov måste byggnaden uppfylla vissa storlekskrav.</p>
 
@@ -195,9 +208,25 @@
             <p>Detta är något som gärna eftersträvas även i robotsammanhang: kontrollerade rörelser längs olika fasta banor genom kombinationer av rörelser i olika vinklar. En matematiker tar då fram formler för att beskriva hur dessa rörelser kan utföras, som sedan används för att programmera roboten. En intressant fråga kan också vara hur långt robotarmens hand kan förflyttas i olika riktningar. Står du still och för din hand rakt framåt kan du omöjligen nå tre meter bort, hur du än vinklar din armbåge och axel. Dessa typer av problem, när maximala eller minimala gränser hos ett värde ska hittas, brukar i matematiken kallas extremvärdesproblem.
             </p>
 
-            <p>För att lösa dessa extremvärdesproblem används formler och kunskap inom geometri och trigonometri som matematiker utvecklat under årtusenden. Att se hur, eller ens om, roboten kan föra sin hand från en plats till en annan är en något enklare uppgift. Låt oss titta på den. Ett sätt att uttrycka en rörelse som innefattar ett avstånd och en vinkel på ett matematiskt vis är med vektorer som här illustreras av pilar.</p>
+            <p>För att lösa dessa extremvärdesproblem används formler och kunskap inom geometri och trigonometri som matematiker utvecklat under årtusenden. Att se hur, eller ens om, roboten kan föra sin hand från en plats till en annan är en något enklare uppgift. Låt oss titta på den. Ett sätt att uttrycka en rörelse som innefattar ett avstånd och en vinkel på ett matematiskt vis är med vektorer som här illustreras av pilar.</p>  
+
+            <p>Vi vill flytta handen från den vänstra punkten till den högra:</p>
+            
+            <div class="article-img">
+                <img src="images/articles/x1.png" alt="Image">
+            </div>
+
+            <p>Robotarmen har tre leder och kan justera handens position i varsin riktning. Om vi med pilar ritar upp hur de var för sig påverkar rörelsen för handen, kan vi få något som nedan:</p>
+
+            <div class="article-img">
+                <img src="images/articles/x2.png" alt="Image">
+            </div>
 
             <p>Genom att förflytta oss olika långt längs lederna produceras olika långa pilar. Vid rotation bevaras pilens längd men pekar istället i en annan riktning. Summan av alla dessa rörelser får vi om vi summerar alla vektorer - alltså “klistrar ihop” pilarna efter varandra medan vi fortfarande bevarar riktningen. Då ser vi:</p>
+
+            <div class="article-img">
+                <img src="images/articles/x3.png" alt="Image">
+            </div>
 
             <p>Det vill säga ett sätt att röra robotens hand från den ena punkten till den andra, exempelvis från en hög med fordonsdelar till den bil som är under konstruktion. När dessa vektorer uttrycks matematiskt ger de bra verktyg för att lösa problemet med hur dessa kombineras för att nå en specifik plats eller följa en specifik väg. Detta matematiska område kallas främst linjär algebra. Datorer kan inte tänka i pilar, robotar behöver den matematiska notationen.
             </p>
