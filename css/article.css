@@ -70,7 +70,13 @@ code {
 }
 
 .highlighted {
-    background: #7DFFB3;
+    background: rgb(249, 168, 40, 0.3);
+    text-decoration: none;
+}
+
+a.highlighted:hover {
+    text-decoration: underline;
+    color: black !important;
 }
 
 .first-letter {
@@ -273,7 +279,10 @@ p.icons i:hover {
     margin: 5px 1px;
 }
 
-.welcome a:hover, .header a:hover, .footer a:hover, .article a:hover {
+.welcome a:hover,
+.header a:hover,
+.footer a:hover,
+.article a:hover {
     color: rgb(249, 168, 40, 0.7);
 }
 
