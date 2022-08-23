@@ -185,7 +185,7 @@ p.icons i:hover {
     grid-area: authorImage;
     /* border: 2px solid black; */
     border-radius: 50%;
-    background: url('../images/logo.webp');
+    background: url('../images/logo.webp'), url('../images/logo.jpg');
     background-size: cover;
 }
 
