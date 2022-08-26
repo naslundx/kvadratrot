@@ -2203,6 +2203,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     color: rgba(255, 255, 255, 0.3);
 }
 
+#services p {
+    color: rgba(242, 242, 242, 0.6);
+}
+
 #services .overlay {
     position: absolute;
     top: 0;
@@ -2234,7 +2238,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #services .section-intro .lead {
-    color: rgba(242, 242, 242, 0.4);
+    color: rgba(242, 242, 242, 0.6);
 }
 
 #services .services-content {
@@ -2365,7 +2369,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #portfolio .section-intro .lead {
-    color: rgba(242, 242, 242, 0.4);
+    color: rgba(242, 242, 242, 0.6);
 }
 
 #portfolio .portfolio-content {
@@ -2951,7 +2955,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #contact .section-intro p.lead {
-    color: rgba(242, 242, 242, 0.4);
+    color: rgba(242, 242, 242, 0.6);
 }
 
 .contact-content {
@@ -3260,7 +3264,7 @@ footer {
     margin: 0 0 5.4rem 0;
     padding: 0;
     font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 footer a,
@@ -3316,7 +3320,7 @@ footer h4.h05::after {
 
 .footer-main ul a,
 .footer-main ul a:visited {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-main ul a:hover,
