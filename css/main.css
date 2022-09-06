@@ -2241,6 +2241,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     color: rgba(242, 242, 242, 0.6);
 }
 
+#services a:hover {
+    color: white;
+}
+
 #services .services-content {
     text-align: center;
     max-width: 1040px;
