@@ -155,9 +155,16 @@ p.icons i:hover {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: image;
-    background: url("https://i2.wp.com/www.lifeofanarchitect.com/wp-content/uploads/2015/01/Architecture-and-Math-note-scan.jpg?resize=600%2C600");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.image-statistik {
+    background: url("../images/articles/statistik.png");
+}
+
+.image-arkitektur {
+    background: url("../images/articles/arkitektur.png");
 }
 
 .info {
