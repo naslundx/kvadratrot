@@ -160,11 +160,16 @@ p.icons i:hover {
 }
 
 .image-statistik {
-    background: url("../images/articles/statistik.png");
+    background: url("../images/articles/statistik.png") ;
 }
 
 .image-arkitektur {
     background: url("../images/articles/arkitektur.png");
+}
+
+.image-radioaktiv {
+    background: url("../images/articles/radioaktiv.png") no-repeat center;
+
 }
 
 .info {
