@@ -2191,20 +2191,20 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #services {
     background-color: #19191b;
-    /* background-image: url(../images/services-bg.jpg); */
-    background-repeat: no-repeat;
+    background-image: url(../images/mathbg2.jpg);
+    /* background-repeat: repeat; */
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
+    background-size: 70%;
     min-height: 800px;
     position: relative;
-    padding: 15rem 0 15rem;
+    padding: 10rem 0 10rem;
     color: rgba(255, 255, 255, 0.3);
 }
 
 #services p {
-    color: rgba(242, 242, 242, 0.6);
+    color: rgba(242, 242, 242, 0.8);
 }
 
 #services .overlay {
@@ -2238,7 +2238,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #services .section-intro .lead {
-    color: rgba(242, 242, 242, 0.6);
+    color: rgba(242, 242, 242, 0.8);
 }
 
 #services a:hover {
@@ -2373,7 +2373,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #portfolio .section-intro .lead {
-    color: rgba(242, 242, 242, 0.6);
+    color: rgba(242, 242, 242, 0.8);
 }
 
 #portfolio .portfolio-content {
@@ -2959,7 +2959,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #contact .section-intro p.lead {
-    color: rgba(242, 242, 242, 0.6);
+    color: rgba(242, 242, 242, 0.8);
 }
 
 .contact-content {
@@ -3422,7 +3422,7 @@ footer h4.h05::after {
     width: 60px;
     line-height: 63px;
     text-align: center;
-    background-color: #000000;
+    background-color: #f9a828;
     color: #888;
     text-align: center;
     text-transform: uppercase;
@@ -3431,21 +3431,22 @@ footer h4.h05::after {
     -webkit-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
 #go-top a i {
-    font-size: 1.7rem;
+    font-size: 3rem;
     line-height: inherit;
 }
 
 #go-top a:visited {
-    background: #000000;
+    background: #f9a828;
     color: #888;
 }
 
 #go-top a:hover,
 #go-top a:focus {
-    background: #000000;
+    background: #f9a828;
     color: #FFFFFF;
 }
 
