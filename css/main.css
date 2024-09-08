@@ -2253,12 +2253,19 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #services .services-list {
     margin-top: 1.2rem;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 #services .services-list .service-item {
     margin-bottom: 2rem;
     padding: 25px 0 0;
+    flex: 1 1 0;
+    width: 0;
+    min-width: 40%;
 }
+
 
 #services .services-list a .service-item {
     background-color: #252525;
@@ -2266,6 +2273,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
+    width: 100%;
 }
 
 #services .services-list a .service-item:hover {
@@ -2299,30 +2307,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * services
  * ------------------------------------------------------------------- */
 
-@media only screen and (max-width: 1024px) {
-    #services .services-list .service-item {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    #services .services-list .service-item {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     #services {
         padding: 12rem 0 12rem;
     }
     #services .services-content {
         max-width: 550px;
-    }
-    #services .services-list .service-item {
-        padding-left: 15px;
-        padding-right: 15px;
     }
     #services .services-list .icon i {
         font-size: 5.1rem;
@@ -2757,7 +2747,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #testimonials .flex-control-nav li {
     margin: 0 6px;
     display: inline-block;
-    zoom: 1;
+    transform: scale(1);
+    transform-origin: 0 0;
 }
 
 #testimonials .flex-control-paging li a {
@@ -2902,7 +2893,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #clients .owl-carousel .owl-dots .owl-dot {
     display: inline-block;
-    zoom: 1;
+    transform: scale(1);
+    transform-origin: 0 0;
     *display: inline;
 }
 
