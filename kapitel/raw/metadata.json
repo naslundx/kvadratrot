@@ -1,0 +1,20 @@
+[
+  {
+    "filename": "arkitektur.md",
+    "pagename": "arkitektur",
+    "title": "Arkitektur, konstruktion och snickeri",
+    "subtitle": "Att bygga något med mattens hjälp: Geometri, trigonometri, skala, vektorer"
+  },
+  {
+    "filename": "radioaktivitet.md",
+    "pagename": "radioaktivitet",
+    "title": "Radioaktivitet och nedbrytning",
+    "subtitle": "Hur matematiken skyddar oss och bevarar miljön"
+  },
+  {
+    "filename": "statistik.md",
+    "pagename": "statistik",
+    "title": "Statistik",
+    "subtitle": "Hur några få kan säga så mycket om så många: Sannolikhet, statistik, logaritmer"
+  }
+]
