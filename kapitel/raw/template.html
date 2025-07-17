@@ -66,12 +66,15 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia"
         />
-        <link rel="stylesheet" href="../css/jqmath-0.4.3.min.css" />
-        <script src="../js/jqmath-vanilla.min.js"></script>
+        <script
+            id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        ></script>
     </head>
     <body>
         <div class="container">
-            <div class="header">
+            <div class="header no-print">
                 <!-- TODO change to header -->
                 <p>
                     Denna text uppdaterades {{ TIMESTAMP }} och är ursprungligen
@@ -84,7 +87,7 @@
                     >.
                 </p>
             </div>
-            <div class="meta">
+            <div class="meta no-print">
                 <div class="image image-{{PAGENAME}}"></div>
                 <div class="info">
                     <h1>{{TITLE}}</h1>
@@ -109,20 +112,46 @@
                             href="https://www.facebook.com/verklighetenskvadratrotter"
                             ><i class="fa fa-facebook-square"></i
                         ></a>
-                        <a href="https://twitter.com/kvadratrot"
-                            ><i class="fa fa-twitter"></i
-                        ></a>
                         <a href="https://instagram.com/naslundx"
                             ><i class="fa fa-instagram"></i
                         ></a>
+                        <a
+                            class="print-button no-print"
+                            onclick="window.print()"
+                        >
+                            <i class="fa fa-print"></i>
+                        </a>
                     </p>
                 </div>
             </div>
             <main class="article">
-                <div class="welcome">
+                <div class="meta force-print">
+                    <div class="info">
+                        <h1>{{TITLE}}</h1>
+                        <p class="subtitle">{{SUBTITLE}}</p>
+
+                        <div class="author">
+                            <div class="authorImage"></div>
+                            <div class="authorInfo">
+                                <div class="authorName">
+                                    <a href="https://kvadratrot.se"
+                                        >Ett kapitel från Verklighetens
+                                        Kvadratrötter, skriven av Marcus
+                                        Näslund.</a
+                                    >
+                                </div>
+                                <div class="authorSub">
+                                    Senast uppdaterad {{ TIMESTAMP }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ CONTENT }}
+                <div class="welcome no-print">
                     <!-- Add X button for this div -->
                     <p>
-                        Hej! Detta är ett reviderat kapitel från
+                        Detta var ett reviderat kapitel från
                         <strong>Verklighetens Kvadratrötter</strong>, en bok
                         från 2012 om skolmattens nytta i vardagen och samhället.
                     </p>
@@ -138,22 +167,13 @@
                         >.
                     </p>
                 </div>
-                {{ CONTENT }}
             </main>
             <div class="footer">
-                <!-- TODO change to footer -->
                 <p>
                     Om du gillade detta, spana in min nya bok:
                     <a href="https://ensummaavogonblick.se"
                         >En Summa av Ögonblick</a
                     >!
-                </p>
-                <p>
-                    Följ boken på
-                    <a href="https://www.facebook.com/summaogonblick"
-                        >Facebook</a
-                    >
-                    för att veta när nästa kapitel släpps!
                 </p>
             </div>
         </div>

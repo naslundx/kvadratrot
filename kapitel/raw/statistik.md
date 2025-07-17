@@ -23,7 +23,7 @@ En undersökning görs för att ta reda på något. Det kan ha med samhället at
 
 Ett begrepp som från och med 2011 ingår i gymnasieutbildningen är normalfördelningen. Det är en matematisk funktion definierad på följande vis:
 
-$$ 1 / {σ √{2π} } e^{-{(x-σ)^2} / {2 σ^2} } $$
+$$ \frac{1}{\sigma \sqrt{2\pi} } e^{-{(x-\sigma)^2} / {2 σ^2} } $$
 
 Normalfördelningens graf har ett utseende som påminner om en gammaldags ringklocka och går därför under namnet ”klockkurvan”. Den kan se ut såhär:
 
@@ -67,7 +67,7 @@ Ett exempel på användningsområde är problemet med att räkna antalet fiskar 
 
 Exempelvis låter vivara det totala antalet fiskar i sjön, det som vi vill ta reda på. En dag fångar vi upp 30 fiskar. Vi märker dem och släpper sedan tillbaka dem. Efter en tid går vi återigen ut på fisketur och fångar upp 25 fiskar. Av dessa är 6 st märkta, vilket ger att andelen märkta är . Denna andel torde, liksom när man undersöker partisympati, vara lika stor som andelen hos hela befolkningen. I detta fall utgörs befolkningen av fiskar. Vi vet att det finns 30 märkta av totalt N fiskar, så det ger ekvationen och lösningen:
 
-$$30 / N = {6} / {25} ⇨ N = {25*30} / {6} = 125$$
+$$30 / N = \frac{6}{25} \Rightarrow N = \frac{25 \cdot 30}{6} = 125$$
 
 Svaret är självfallet ungefärligt. För extra säkerhet kan försöket göras om fler gånger. Matematiska modeller finns även för att räkna på hur sannolikt det är att svaret är rätt, och hur mycket det kan tänkas variera. Konfidensintervall spelar in här. Det är nämligen inte säkert att fiskar fördelar sig lika över hela sjön, precis som att numreringen av de tyska stridsvagnarna inte är jämnt fördelad.
 
@@ -104,7 +104,6 @@ Matematisk regression kan också användas i mer än en variabel, alltså för u
 - Undersökningar och beräkningar av optimala naturområden. Många olika variabler (antal av olika arter, pH, ljusförhållanden, väder, med mera) kan jämföras med vad som bäst verkar gynna en eller flera djurarter.
 
 Återigen är urvalet viktigast. Enstaka avvikande värden får mindre och mindre konsekvenser ju fler värden som finns tillgängliga. Det finns många andra matematiska verktyg såsom korrelationskoefficient och standardavvikelse som försöker beskriva hur starkt ett samband är och hur mycket olika mätningar varierar.
-
 
 ## När det går snett
 

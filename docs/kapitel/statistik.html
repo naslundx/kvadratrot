@@ -66,15 +66,18 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia"
         />
-        <link rel="stylesheet" href="../css/jqmath-0.4.3.min.css" />
-        <script src="../js/jqmath-vanilla.min.js"></script>
+        <script
+            id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        ></script>
     </head>
     <body>
         <div class="container">
-            <div class="header">
+            <div class="header no-print">
                 <!-- TODO change to header -->
                 <p>
-                    Denna text uppdaterades 2025-07-16 17:38 och är ursprungligen
+                    Denna text uppdaterades 2025-07-17 11:00 och är ursprungligen
                     från
                     <a href="https://kvadratrot.se"
                         >Verklighetens Kvadratrötter</a
@@ -84,7 +87,7 @@
                     >.
                 </p>
             </div>
-            <div class="meta">
+            <div class="meta no-print">
                 <div class="image image-statistik"></div>
                 <div class="info">
                     <h1>Statistik</h1>
@@ -100,7 +103,7 @@
                                 >
                             </div>
                             <div class="authorSub">
-                                Senast uppdaterad 2025-07-16 17:38
+                                Senast uppdaterad 2025-07-17 11:00
                             </div>
                         </div>
                     </div>
@@ -109,34 +112,40 @@
                             href="https://www.facebook.com/verklighetenskvadratrotter"
                             ><i class="fa fa-facebook-square"></i
                         ></a>
-                        <a href="https://twitter.com/kvadratrot"
-                            ><i class="fa fa-twitter"></i
-                        ></a>
                         <a href="https://instagram.com/naslundx"
                             ><i class="fa fa-instagram"></i
                         ></a>
+                        <a
+                            class="print-button no-print"
+                            onclick="window.print()"
+                        >
+                            <i class="fa fa-print"></i>
+                        </a>
                     </p>
                 </div>
             </div>
             <main class="article">
-                <div class="welcome">
-                    <!-- Add X button for this div -->
-                    <p>
-                        Hej! Detta är ett reviderat kapitel från
-                        <strong>Verklighetens Kvadratrötter</strong>, en bok
-                        från 2012 om skolmattens nytta i vardagen och samhället.
-                    </p>
-                    <p>
-                        Är du nyfiken på mer kan du
-                        <a
-                            href="https://www.bokus.com/bok/9789174630343/verklighetens-kvadratrotter-vad-den-dar-matematiken-faktiskt-anvands-till/"
-                            >köpa hela boken</a
-                        >
-                        eller spana in min nya bok
-                        <a href="https://ensummaavogonblick.se"
-                            >En Summa av Ögonblick</a
-                        >.
-                    </p>
+                <div class="meta force-print">
+                    <div class="info">
+                        <h1>Statistik</h1>
+                        <p class="subtitle">Hur några få kan säga så mycket om så många: Sannolikhet, statistik, logaritmer</p>
+
+                        <div class="author">
+                            <div class="authorImage"></div>
+                            <div class="authorInfo">
+                                <div class="authorName">
+                                    <a href="https://kvadratrot.se"
+                                        >Ett kapitel från Verklighetens
+                                        Kvadratrötter, skriven av Marcus
+                                        Näslund.</a
+                                    >
+                                </div>
+                                <div class="authorSub">
+                                    Senast uppdaterad 2025-07-17 11:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <p>Tillsammans med ekonomi är statistik ett lätt område när det gäller att hitta tydliga tillämpningar av matematiken eftersom det är så universellt förekommande. Vi ska i detta kapitel fördjupa oss i hur statistiska undersökningar går till, vad man kan dra för slutsatser och hur man tänker kritiskt kring dessa.</p>
 <p>Dessutom ska vi tala om något som oftast är mycket roligare, hur undersökningar inte ska gå till och hur statistik absolut inte ska presenteras. Tidningar och annan media är full av olika statistiska undersökningar och då är det oerhört viktigt för oss alla att vi kan tolka och förstå dem på ett korrekt sätt. För den som arbetar med praktisk statistik är det särskilt dåligt att inte vara tillräckligt insatt i metoderna. Det är också viktigt för oss andra att förstå när det inte går att dra några slutsatser och förstå när någon försöker vilseleda oss. Tycker du inte att detta brukar hända särskilt ofta är detta kapitel kanske ännu viktigare för dig.</p>
@@ -150,7 +159,7 @@
 <h2 id="en-statistisk-undersokning">En statistisk undersökning</h2>
 <p>En undersökning görs för att ta reda på något. Det kan ha med samhället att göra: hur populärt ett politiskt parti eller en TV-serie är, eller att bestämma den förväntade livslängden hos en viss befolkning. I det första fallet genomförs någon form av intervju, i det andra fallet är det data som redan finns tillgänglig som analyseras. En undersökning kan också äga rum i mer kontrollerade former, till exempel i laboratorier, vilket vi diskuterar närmare i nästa del.</p>
 <p>Ett begrepp som från och med 2011 ingår i gymnasieutbildningen är normalfördelningen. Det är en matematisk funktion definierad på följande vis:</p>
-<p>$$ 1 / {σ √{2π} } e^{-{(x-σ)^2} / {2 σ^2} } $$</p>
+<p>$$ \frac{1}{\sigma \sqrt{2\pi} } e^{-{(x-\sigma)^2} / {2 σ^2} } $$</p>
 <p>Normalfördelningens graf har ett utseende som påminner om en gammaldags ringklocka och går därför under namnet ”klockkurvan”. Den kan se ut såhär:</p>
 <p><div class="article-img"><img alt="Alt text" src="../images/articles/9.png"/></div></p>
 <p>När en undersökning genomförs bland människor kan man som undersökare (nästan) alltid utgå ifrån att inte alla inblandade kan tillfrågas. Att se exakt hur populärt ett parti är i Sverige skulle kräva att vi frågade och fick ett ärligt svar från alla, men då rör det sig om strax över sju miljoner människor (Antalet röstberättigade inför allmänna valet 2010 enligt Valmyndighetens hemsida). Om femtio människor jobbade åtta timmar per vardag med att bara fråga folk skulle det ta alltför lång tid! Låt oss säga att de behöver 30 sekunder per intervjuperson. Hur lång tid skulle undersökningen ta? Antalet sekunder på en jobbvecka är 5 veckodagar gåner 8 timmar gånger 60 minuter per timme gånger 60 sekunder per minut, lika med 144 000.</p>
@@ -172,7 +181,7 @@
 <p>Ett klassiskt uppskattningsproblem handlar om en man som på sin kvällspromenad räknar ihop totalt fem taxibilar, numrerade 5, 13, 14, 18 och 21. Gissningsvis är bilarna numrerade 1, 2, 3, 4, … och inga två bilar har samma nummer. Hur många taxibilar finns det i så fall i staden? Kanske låter det som ett oviktigt problem, men samma matte användes av de allierade under andra världskriget för att uppskatta antalet stridsvagnar i den tyska armén. Tack vare matematikens generella natur spelar det ingen som helst roll om problemet gäller taxibilar, stridsvagnar eller ens fiskar.</p>
 <p>Ett exempel på användningsområde är problemet med att räkna antalet fiskar i en sjö, detta görs med så kallad återfångst. Ett antal fiskar, säg 100, fångas upp ur sjön, märks på något vis och släpps sedan i vattnet igen. Efter en tid fiskas 100 fiskar upp igen. Av dem är kanske 10 märkta. Utifrån detta går det att få rätt bra svar på frågan om hur många fiskar som finns i sjön (eller åtminstone i det området av den).</p>
 <p>Exempelvis låter vivara det totala antalet fiskar i sjön, det som vi vill ta reda på. En dag fångar vi upp 30 fiskar. Vi märker dem och släpper sedan tillbaka dem. Efter en tid går vi återigen ut på fisketur och fångar upp 25 fiskar. Av dessa är 6 st märkta, vilket ger att andelen märkta är . Denna andel torde, liksom när man undersöker partisympati, vara lika stor som andelen hos hela befolkningen. I detta fall utgörs befolkningen av fiskar. Vi vet att det finns 30 märkta av totalt N fiskar, så det ger ekvationen och lösningen:</p>
-<p>$$30 / N = {6} / {25} ⇨ N = {25*30} / {6} = 125$$</p>
+<p>$$30 / N = \frac{6}{25} \Rightarrow N = \frac{25 \cdot 30}{6} = 125$$</p>
 <p>Svaret är självfallet ungefärligt. För extra säkerhet kan försöket göras om fler gånger. Matematiska modeller finns även för att räkna på hur sannolikt det är att svaret är rätt, och hur mycket det kan tänkas variera. Konfidensintervall spelar in här. Det är nämligen inte säkert att fiskar fördelar sig lika över hela sjön, precis som att numreringen av de tyska stridsvagnarna inte är jämnt fördelad.</p>
 <h2 id="att-se-samband">Att se samband</h2>
 <p>Ibland vill man uppskatta ett samband mellan två eller fler olika värden. Antalet cancerfall och antalet mobiltelefonanvändare, till exempel. Något som ofta studeras av bland andra WHO. Ökar antalet cancerfall när användandet av mobiltelefoner ökar? Förmågan att avläsa statistik är oumbärlig för att kunna dra slutsatser, inte bara i detta fall utan också om hur verksam en medicin är (mängden medicin jämfört med hur bra patienterna mår) eller när extra elkraftverk måste användas (mängden förbrukad elektricitet jämfört med datum eller utomhustemperatur).</p>
@@ -203,21 +212,32 @@
 <p>Jag hoppas att du som läsare blivit lite klokare och lite mer kritisk vad det gäller statistik, men att du fortfarande tror på ämnet. Det är ett oumbärligt verktyg när det sköts rätt</p>
 <p>Normalfördelningens graf har ett utseende som påminner om en gammaldags ringklocka och går därför under namnet ”klockkurvan”. Den kan se ut såhär:</p>
 <p>Kom också ihåg att skilja på procent och procentenheter! Alltför många blandar ihop dem eller känner inte till skillnaden. Procentenheter gäller alltid delar av allt, medan procent kan gälla delar av delar. Om ett parti får 20 % av rösterna i ett val och 10 % i nästa har deras röster inte sjunkit med 10%. Deras röster har sjunkit med 10 procentenheter! Andelen röster har däremot sjunkit från 20 till 10, alltså hälften, och därmed med femtio procent.</p>
+                <div class="welcome no-print">
+                    <!-- Add X button for this div -->
+                    <p>
+                        Detta var ett reviderat kapitel från
+                        <strong>Verklighetens Kvadratrötter</strong>, en bok
+                        från 2012 om skolmattens nytta i vardagen och samhället.
+                    </p>
+                    <p>
+                        Är du nyfiken på mer kan du
+                        <a
+                            href="https://www.bokus.com/bok/9789174630343/verklighetens-kvadratrotter-vad-den-dar-matematiken-faktiskt-anvands-till/"
+                            >köpa hela boken</a
+                        >
+                        eller spana in min nya bok
+                        <a href="https://ensummaavogonblick.se"
+                            >En Summa av Ögonblick</a
+                        >.
+                    </p>
+                </div>
             </main>
             <div class="footer">
-                <!-- TODO change to footer -->
                 <p>
                     Om du gillade detta, spana in min nya bok:
                     <a href="https://ensummaavogonblick.se"
                         >En Summa av Ögonblick</a
                     >!
-                </p>
-                <p>
-                    Följ boken på
-                    <a href="https://www.facebook.com/summaogonblick"
-                        >Facebook</a
-                    >
-                    för att veta när nästa kapitel släpps!
                 </p>
             </div>
         </div>

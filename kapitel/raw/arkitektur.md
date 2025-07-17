@@ -51,21 +51,21 @@ göra intensiva beräkningar när en bild ska visas och i synnerhet när den red
 Bildskärmar och digitala fotografier är uppbyggda av många små enfärgade rutor kallade pixlar, som tillsammans formar en bild liksom rutorna på en kakelvägg. Låt säga att en bild med storleken 3264 x 2448 pixlar ska visas i sin helhet på en
 datorskärm med upplösningen 1920 x 1080 pixlar. Hela bilden får alltså inte plats och måste skalas ner. Frågan är hur mycket?
 
-För en exakt passform ska bilden krympas med en faktor om:
+För en exakt passform ska bilden krympas med relationen mellan tillgänglig bredd och bildens bredd:
 
 $$
-{{Tillgänglig bredd}}/{{Bildens bredd}} = {1920}/{3264} ≈ 0,5882
+\frac{1920}{3264} \approx 0,5882
 $$
 
-Ett värde vi kan kalla för "krympningsfaktorn{. Bildens bredd anpassas till
+Ett värde vi kan kalla för "krympningsfaktorn". Bildens bredd anpassas till bredden gånger denna krympningsfaktor:
 
 $$
-{Bredd} ⋅ {Krympningsfaktor} = 3264 ⋅ 0,5882 = 1919,88
+3264 \cdot 0,5882 = 1919,88
 $$
 
-det vill säga mycket nära skärmens bredd om 1920 pixlar. Att det inte blir exakt beror på att vi för läslighetens skull avrundade krympningsfaktorn. Höjden på bilden blir
+det vill säga mycket nära skärmens bredd om 1920 pixlar. Att det inte blir exakt beror på att vi för läslighetens skull avrundade krympningsfaktorn. Höjden blir på samma sätt:
 
-$${Höjd} ⋅ {Krympningsfaktor} = 2448 ⋅ 0,5882 = 1439,9$$
+$$2448 \cdot 0,5882 = 1439,9$$
 
 Beskåda! Detta är större än de 1080 pixlar som utgör datorskärmens höjd. Vad ska då ske? Om man tvunget vill att hela bilden ska synas på skärmen samtidigt även i höjdled, som vid en presentation, får en ny krympningsfaktor beräknas som är
 mindre än den tidigare. De principer vi gått igenom är sanna och gäller i många andra avseenden, egentligen överallt där någon form av zoom är inblandad. Digitalkameror är ett vanligt exempel.
@@ -94,16 +94,16 @@ form på grund av lagar, markens utseende eller något annat. Låt oss anta att 
 
 Låt bredd förkortas $B$ och längd förkortas $L$:
 
-$${(Arean)}\, A = B ⋅ L$$
-$${(Omkretsen)}\, ∅ = 2 ⋅ B + 2 ⋅ L = 100$$
+$$\text{(Arean)}\, A = B ⋅ L$$
+$$\text{(Omkretsen)}\, \varnothing = 2 ⋅ B + 2 ⋅ L = 100$$
 
 Uttrycket för omkretsen kan skrivas om till
 
-$$B = {100 - 2L}/2$$
+$$B = \frac{100 - 2L}{2}$$
 
 och sättas in i uttrycket för arean vilket ger
 
-$$A = {100 - 2L}/2 ⋅ L = 50L - L^2$$
+$$A = \frac{100 - 2L}{2} \cdot L = 50L - L^2$$
 
 Vi försöker hitta värdet för längden som ger den största möjliga arean. Det visar sig (med hjälp av det matematiska verktyget derivata) att denna längd är 25 meter.
 Där har vi det! När vi vet längden på denna sida och den totala omkretsen kan bredden också räknas ut och det visar sig att denna också blir 25 meter vilket gör hagen kvadratisk.

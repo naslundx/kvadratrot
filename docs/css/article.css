@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Lora|Playfair+Display:700i,900');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Lora|Playfair+Display:700i,900");
 html,
 body {
     margin: 0;
@@ -64,7 +64,7 @@ blockquote {
 
 code {
     font-size: 18px;
-    background: rgba(0, 0, 0, .05);
+    background: rgba(0, 0, 0, 0.05);
     border-radius: 2px;
     padding: 3px 5px;
 }
@@ -117,9 +117,8 @@ p.icons i:hover {
     padding: 20px;
     width: 90%;
     margin: 0 auto;
-    text-align: center
+    text-align: center;
 }
-
 
 /* ##################################################################################
 ########################################  LAYOUT  ###################################
@@ -160,16 +159,15 @@ p.icons i:hover {
 }
 
 .image-statistik {
-    background: url("../images/articles/statistik.png") ;
+    background: url("../images/articles/statistik.png");
 }
 
 .image-arkitektur {
     background: url("../images/articles/arkitektur.png");
 }
 
-.image-radioaktiv {
-    background: url("../images/articles/radioaktiv.png") no-repeat center;
-
+.image-radioaktivitet {
+    background: url("../images/articles/radioaktivitet.png") no-repeat center;
 }
 
 .info {
@@ -197,7 +195,7 @@ p.icons i:hover {
     grid-area: authorImage;
     /* border: 2px solid black; */
     border-radius: 50%;
-    background: url('../images/logo.webp'), url('../images/logo.jpg');
+    background: url("../images/logo.webp"), url("../images/logo.jpg");
     background-size: cover;
 }
 
@@ -381,7 +379,7 @@ hr.fancy-line:before {
 }
 
 hr.fancy-line:after {
-    content: '';
+    content: "";
     height: 0.5em;
     /* half the height of :before */
     top: 1px;
@@ -390,22 +388,78 @@ hr.fancy-line:after {
 
 hr.fancy-line:before,
 hr.fancy-line:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
 }
 
 hr.fancy-line,
 hr.fancy-line:before {
-    background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 75%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(75%, rgba(0, 0, 0, 0)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
+    background: -moz-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0) 75%
+    );
+    background: -webkit-gradient(
+        radial,
+        center center,
+        0px,
+        center center,
+        75%,
+        color-stop(0%, rgba(0, 0, 0, 0.1)),
+        color-stop(75%, rgba(0, 0, 0, 0))
+    );
+    background: -webkit-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0) 75%
+    );
+    background: -o-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0) 75%
+    );
+    background: -ms-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0) 75%
+    );
+    background: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0) 75%
+    );
 }
 
 body,
 hr.fancy-line:after {
     background: #f4f4f4;
+}
+
+.print-button {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.force-print {
+    display: none;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+    .force-print {
+        display: inline;
+    }
+    body,
+    .container,
+    main {
+        display: block;
+    }
 }

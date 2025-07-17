@@ -15,9 +15,9 @@ På samma sätt kan vi med god statistisk noggrannhet inte uttala oss om när en
 ## Radioaktivitet
 Om hälften av ett antal radioaktiva atomer har sönderfallit efter en tidpunkt T kallar vi detta för halveringstiden. Efter lika lång tid har ytterligare hälften sönderfallit och bara en fjärdedel återstår, och så vidare. De som studerat geometriska serier känner nog igen sig. Händelseförloppet bildar en exponentiell kurva enligt formeln:
 
-$$ N(t) = N_0 e^{ {-t \ln(2) } / T } $$
+$$ N(t) = N_0 e^{ {-t \ln{(2)} } / T } $$
 
-Där $N_0$ är antalet atomer från början, t är tiden som passerat, $e ≈ 2,72$ och $ln(2) ≈ 0,69$. T är som bekant halveringstiden, vilken är specifik för olika ämnen (olika atomslag och isotoper).
+Där \\(N_0\\) är antalet atomer från början, t är tiden som passerat, \\(e ≈ 2,72\\) och \\(\ln{(2)} \approx 0,69\\). T är som bekant halveringstiden, vilken är specifik för olika ämnen (olika atomslag och isotoper).
 
 När de radioaktiva atomerna sönderfaller avger de joniserande strålning, densamma som används i kärnkraftverk för att generera elektrisk energi. Det är vanligt att säga "radioaktiv strålning", även om detta är ett missvisande och felaktigt begrepp. Det är samlingen atomer och inte strålningen som är radioaktiv. Den korrekta termen är joniserande strålning. I kärnkraftverk måste processen kontrolleras noga och bromsas upp tillräckligt så att reaktionerna sker under kontrollerade former, men inte bromsas så kraftigt att processen avstannar helt. Samtidigt är strålningen mycket farlig och måste skärmas av. I båda fallen gäller det att ekvationerna för radioaktivitet respektive strålning beräknas med god noggrannhet.
 
@@ -43,15 +43,17 @@ Flertalet kemiska produkter är skadliga för miljön, såsom exempelvis DDT. In
 
 Efter hur lång tid är nästan allt (99 procent) av den mängd DDT som fanns i naturen 1968 borta? Vi använder den tidigare nämnda formeln med halveringstidenår. Vi vet inte hur stor koncentrationen var utan kallar den helt enkelt för x. Uträkningen fungerar ändå eftersom nedbrytningshastigheten (halveringstiden) är konstant, oberoende av hur stor mängden faktiskt är.
 
-Frågan är när bara en procent, alltså $0,01x$, återstår:
+Frågan är när bara en procent, alltså \\(0,01x\\), återstår:
 $$ N(t) = N_0 e^{ {-t \ln(2) } / T } $$
-med $N_0=x$ och $T=15$
+med \\(N_0=x\\) och \\(T=15\\).
 
 Vi försöker lösa ut tiden , alltså antal år efter 1968. Uttrycket förenklas vidare till:
 
-$$0,01x = xe^{ {-t ln(2)} / {15} } ⇨ ln(0,01) = {-t ln(2) } / {15} ⇨ t = {-ln(0,01) * 15 } / { ln(2) } ≈ 100$$
+$$0,01x = xe^{ {-t ln(2)} / {15} } $$
+$$\Rightarrow \ln{(0,01)} = {-t \ln{(2)} } / {15}$$
+$$\Rightarrow t = \frac{-ln(0,01) \cdot 15 }{ ln(2) } \approx 100$$
 
-Med lite räknande kommer vi fram till $t ≈ 100$. Inte förrän om hundra år efter 1968, år 2068, kommer bara en procent av de DDT-utsläpp som fanns 1968 vara kvar. Möjligheten till sådana uträkingar är viktig för att veta hur förorenad en mark är, om den går att bruka, och så vidare. Liknande formler används för andra typer av skadliga ämnen.
+Med lite räknande kommer vi fram till \\(t \approx 100\\). Inte förrän om hundra år efter 1968, år 2068, kommer bara en procent av de DDT-utsläpp som fanns 1968 vara kvar. Möjligheten till sådana uträkingar är viktig för att veta hur förorenad en mark är, om den går att bruka, och så vidare. Liknande formler används för andra typer av skadliga ämnen.
 
 ## Arkeologi och geologi
 Kol-14 är en radioaktiv isotop av kol som alla levande organismer på denna planet, djur som växter, har vissa koncentrationer av. Vi absorberar hela tiden en viss mängd genom vår föda och håller därmed koncentrationen i kroppen jämn under hela vår livstid. När ett djur eller en växt dör eller vissnar slutar denna kontinuerliga påfyllning och eftersom kolet är radioaktivt börjar det sönderfalla. Genom att jämföra koncentrationen hos en död varelse med en levande kan vi säga något om hur länge den legat död. Halveringstiden är redan känd till att vara 5730 år. Detta vet vi tack vare duktig matematisk slutledning efter observationer under mycket kortare tidsintervall.
