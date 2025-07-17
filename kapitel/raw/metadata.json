@@ -16,5 +16,17 @@
     "pagename": "statistik",
     "title": "Statistik",
     "subtitle": "Hur några få kan säga så mycket om så många: Sannolikhet, statistik, logaritmer"
+  },
+  {
+    "filename": "rymdutforskning.md",
+    "pagename": "rymdutforskning",
+    "title": "Rymdutforskning",
+    "subtitle": "Hur matematiken höjer oss till skyarna"
+  },
+  {
+    "filename": "sportochspel.md",
+    "pagename": "sportochspel",
+    "title": "Sport & spel",
+    "subtitle": "Matematik för såväl mentala som fysiska ansträngningar"
   }
 ]

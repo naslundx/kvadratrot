@@ -170,6 +170,14 @@ p.icons i:hover {
     background: url("../images/articles/radioaktivitet.png") no-repeat center;
 }
 
+.image-rymdutforskning {
+    background: url("../images/articles/rymdutforskning.jpg");
+}
+
+.image-sportochspel {
+    background: url("../images/articles/sportochspel.jpg");
+}
+
 .info {
     -ms-grid-row: 1;
     -ms-grid-column: 1;

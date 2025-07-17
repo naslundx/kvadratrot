@@ -44,7 +44,11 @@
     "link": "standardavvikelse"
   },
   {
-    "term": "",
-    "link": ""
+    "term": "FIFA",
+    "link": "https://sv.wikipedia.org/wiki/Fifa"
+  },
+  {
+    "term": "Elosystemet",
+    "link": "https://sv.wikipedia.org/wiki/Elo-rating"
   }
 ]
