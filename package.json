@@ -1,0 +1,16 @@
+{
+  "name": "kvadratrot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Verklighetens Kvadratrötter",
+  "scripts": {
+    "lint:js": "eslint docs/js/*.js --no-warn-ignored",
+    "lint:css": "stylelint docs/css/*.css",
+    "lint": "npm run lint:js && npm run lint:css"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "stylelint": "^16.1.0",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}
